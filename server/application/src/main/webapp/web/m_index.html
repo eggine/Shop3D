@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>首页</title>
+  
+  <!-- dev mode 
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/carousel.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/store.css" rel="stylesheet">
+  <link href="css/mobile-store.css" rel="stylesheet">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ymd-carousel.js"></script>
+  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+
+
+  <!-- produce mode -->
+  <link href="${path}/web/css/m_bootstrap.min.css" rel="stylesheet">
+  <link href="${path}/web/css/m_font-awesome.min.css" rel="stylesheet">
+  <link href="${path}/web/css/m_carousel.css" rel="stylesheet">
+  <link href="${path}/web/css/m_store.css" rel="stylesheet">
+  <link href="${path}/web/css/m_mobile-store.css" rel="stylesheet">
+  <script src="${path}/web/js/m_jquery.min.js"></script>
+  <script src="${path}/web/js/m_bootstrap.min.js"></script>
+  
+
+</head>
+
+<body>
+
+  <!-- Fixed navbar -->
+  <div id="navpanel">
+    <nav id="aaaaa" class="navbar navbar-default navbar-fixed-top blue-navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+          <a class="navbar-brand" href="#">3D</a>
+         <!--  <span class="page-title">商品定制</span> -->
+           <span class="page-title">首页</span>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="mainmenu">
+
+              <a  href="list?device=mobile" data-target="#test1">男子</a>
+
+            </li>
+            <li class="mainmenu">
+
+              <a data-toggle="collapse" href="list?device=mobile" data-target="#test2">女子</a>
+
+            </li>
+            <li class="mainmenu">
+
+
+              <a data-toggle="collapse" href="list?device=mobile" data-target="#test3">商务</a>
+
+            </li>
+            <li class="mainmenu">
+              <a href="${path}/web/#" class="" data-toggle="" role="button" aria-expanded="false">
+                运动
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="${path}/web/#">Action</a>
+                </li>
+                <li>
+                  <a href="${path}/web/#">Another action</a>
+                </li>
+                <li>
+                  <a href="${path}/web/#">Something else here</a>
+                </li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li>
+                  <a href="${path}/web/#">Separated link</a>
+                </li>
+                <li>
+                  <a href="${path}/web/#">One more separated link</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+
+
+              <a href="list?device=mobile">注册</a>
+
+            </li>
+            <li>
+
+
+              <a href="list?device=mobile">登陆</a>
+
+            </li>
+            <li class="active">
+              <a href="list?device=mobile">
+                帮助
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--/.nav-collapse --> </div>
+    </nav>
+
+  </div>
+
+
+  <!-- Carousel
+    ================================================== -->
+  <div id="ymdcarousel" class="ymd-carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#ymdcarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#ymdcarousel" data-slide-to="1"></li>
+      <li data-target="#ymdcarousel" data-slide-to="2"></li>
+    </ol>
+    <img src="${path}/web/images/shafa.jpg" alt="test">
+   <!--  <img src="http://192.168.73.26:8080/3DStore/mobile/images/images/_21.jpg" alt="test">
+    <img src="http://192.168.73.26:8080/3DStore/mobile/images/images/_21.jpg" alt="test"> -->
+
+</div>
+<!-- /.carousel -->
+
+<div class="container-fluid">
+
+  <div class="row">
+   <div class="col-xs-12 module-class">
+     <div class="col-xs-3 module-item">
+        
+        <div class="module-img bg0"><a href="list?device=mobile"><i class="fa fa-cart-plus"></i></a></div>
+        <div class="module-name">购物车</div>
+ 
+     </div>
+     <div class="col-xs-3 module-item">
+       <div class="module-img bg1"><a href="list?device=mobile"><i class="fa fa-money"></i></a></div>
+        <div class="module-name">所有商品</div>
+     </div>
+     <div class="col-xs-3 module-item">
+       <div class="module-img bg2"><a href="list?device=mobile"><i class="fa fa-rss"></i></a></div>
+        <div class="module-name"><a href="list?device=mobile">定制</a></div>
+     </div>
+     <div class="col-xs-3 module-item">
+       <div class="module-img bg3"><a href="list?device=mobile"><i class="fa fa-user"></i></a></div>
+        <div class="module-name">我的</div>
+     </div>
+   </div>
+
+   <div class="col-xs-12 new-arrival pd0">
+        <div class="new-arrival-title">
+           <a href="list?device=mobile">新品上市</a>
+        </div>
+        <div class="new-arrival-content">
+         <a href="list?device=mobile"><img src="${path}/web/images/new-arrival.jpg" alt="test"></a>
+        </div>
+     
+   </div>
+
+   <div class=" col-xs-12 pd0 classic-made">
+     <div class="classic-made-title">
+       经典再现
+     </div>
+
+     <div class="col-xs-6 pd0">
+         <div class="classic-made-content-all">
+           <a href="list?device=mobile"><img src="${path}/web/images/all.png" alt="test"></a>
+        </div>
+     </div>
+
+    
+     <div class="col-xs-6 pd0">
+         <div class="classic-made-content-half">
+            <a href="list?device=mobile"><img src="${path}/web/images/half1.png" alt="test"></a>
+         </div>
+         <div class="classic-made-content-half">
+           <a href="list?device=mobile"> <img src="${path}/web/images/half2.png" alt="test"></a>
+         </div>
+     </div>
+
+   </div>
+    
+  </div>
+
+
+    <!-- /.row -->
+    <hr class="featurette-divider">
+    <!-- FOOTER -->
+    <footer>
+      <p class="pull-right">
+        <a href="${path}/web/#">回到顶部</a>
+      </p>
+      <p>
+        &copy; 2014 Company, Inc. &middot;
+        <a href="${path}/web/#">一麻袋</a>
+        &middot;
+        <a href="${path}/web/#">版权所有</a>
+      </p>
+    </footer>
+
+  </div>
+  <!-- /.container -->
+
+  <script type="text/javascript">
+        $(document).ready(function(){
+        
+        });
+
+    </script>
+  </body>
+</html>

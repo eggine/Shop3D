@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>首页</title>
+  
+  <!-- dev mode -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/carousel.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/store.css" rel="stylesheet">
+  <link href="css/mobile-store.css" rel="stylesheet">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ymd-carousel.js"></script>
+  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+  <!-- produce mode 
+  <link href="${path}/web/css/bootstrap.min.css" rel="stylesheet">
+  <link href="${path}/web/css/font-awesome.min.css" rel="stylesheet">
+  <link href="${path}/web/css/carousel.css" rel="stylesheet">
+  <link href="${path}/web/css/store.css" rel="stylesheet">
+  <link href="${path}/web/css/mobile-store.css" rel="stylesheet">
+  <script src="${path}/web/js/jquery.min.js"></script>
+  <script src="${path}/web/js/bootstrap.min.js"></script>
+  <script src="${path}/web/../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  -->
+
+</head>
+
+<body>
+
+  <!-- Fixed navbar -->
+  <div id="navpanel">
+    <nav id="aaaaa" class="navbar navbar-default navbar-fixed-top blue-navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+          <a class="return-btn" href="#"><span><i class="fa fa-angle-left"></i>
+             </span></a>
+         <!--  <span class="page-title">商品定制</span> -->
+           <span class="page-title">商品详情</span>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="mainmenu">
+
+              <a data-toggle="collapse" href="#" data-target="#test1">男子</a>
+
+            </li>
+            <li class="mainmenu">
+
+              <a data-toggle="collapse" href="#" data-target="#test2">女子</a>
+
+            </li>
+            <li class="mainmenu">
+
+
+              <a data-toggle="collapse" href="#" data-target="#test3">商务</a>
+
+            </li>
+            <li class="dropdown">
+              <a href="${path}/web/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                运动
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="${path}/web/#">Action</a>
+                </li>
+                <li>
+                  <a href="${path}/web/#">Another action</a>
+                </li>
+                <li>
+                  <a href="${path}/web/#">Something else here</a>
+                </li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li>
+                  <a href="${path}/web/#">Separated link</a>
+                </li>
+                <li>
+                  <a href="${path}/web/#">One more separated link</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+
+
+              <a href="../navbar/">注册</a>
+
+            </li>
+            <li>
+
+
+              <a href="../navbar-static-top/">登陆</a>
+
+            </li>
+            <li class="active">
+              <a href="${path}/web/./">
+                帮助
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--/.nav-collapse --> </div>
+    </nav>
+
+  </div>
+
+
+  <!-- Carousel
+    ================================================== -->
+  <div id="ymdcarousel" class="ymd-carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#ymdcarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#ymdcarousel" data-slide-to="1"></li>
+      <li data-target="#ymdcarousel" data-slide-to="2"></li>
+    </ol>
+    <img src="http://120.25.208.98:8001/A98F21G/000-00-000-00000_42.jpg" alt="test">
+   <!--  <img src="http://192.168.73.26:8080/3DStore/mobile/images/images/_21.jpg" alt="test">
+    <img src="http://192.168.73.26:8080/3DStore/mobile/images/images/_21.jpg" alt="test"> -->
+
+</div>
+<!-- /.carousel -->
+
+<div class="container-fluid">
+
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+     <div class="list-group item-detail-list-view">
+      <div  class="list-group-item item-detail">
+
+        <div class="item-detail-description">
+          <p class="item-name">new balance 男子跑步鞋 经典574</p>
+          <p class="item-price">￥659</p>
+          <p class="item-type">运动/跑步鞋</p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div  class="list-group-item item-detail-color">
+        <p>颜色：</p>
+        <p>
+          <div class="item-detail-color-choose">
+            <div class="item-detail-color color-red"></div>
+            <div class="item-detail-color color-orange"></div>
+            <div class="item-detail-color color-yellow"></div>
+            <div class="clearfix"></div>
+          </div>
+        </p>
+      </div>
+      <div  class="list-group-item item-detail">
+        <span>规格：</span>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+            尺码选择
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a>39#</a>
+            </li>
+            <li>
+              <a>40#</a>
+            </li>
+            <li>
+              <a>41#</a>
+            </li>
+            <li>
+              <a>42#</a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+            数量选择
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="#">1</a>
+            </li>
+            <li>
+              <a href="#">2</a>
+            </li>
+            <li>
+              <a href="#">3</a>
+            </li>
+            <li>
+              <a href="#">4</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div  class="list-group-item item-detail">
+        <span>送至：</span>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+             北京市
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a>39#</a>
+            </li>
+            <li>
+              <a>40#</a>
+            </li>
+            <li>
+              <a>41#</a>
+            </li>
+            <li>
+              <a>42#</a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+            朝阳区
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="#">1</a>
+            </li>
+            <li>
+              <a href="#">2</a>
+            </li>
+            <li>
+              <a href="#">3</a>
+            </li>
+            <li>
+              <a href="#">4</a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+            管庄
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="#">1</a>
+            </li>
+            <li>
+              <a href="#">2</a>
+            </li>
+            <li>
+              <a href="#">3</a>
+            </li>
+            <li>
+              <a href="#">4</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div  class="list-group-item item-detail">
+        <p>本商品由一麻袋发货和提供售后服务</p>
+      </div>
+
+
+    </div>
+  
+  </div>
+
+  
+    
+
+
+    <!-- /.row -->
+
+    <div class="row">
+      <div class="col-xs-12 new-arrival pd0">
+        <div class="new-arrival-title">图文详情</div>
+        <div class="new-arrival-content">
+          <img src="images/new-arrival.jpg" alt="test"></div>
+        <div class="new-arrival-content">
+          <img src="images/new-arrival.jpg" alt="test"></div>
+        <div class="new-arrival-content">
+          <img src="images/new-arrival.jpg" alt="test"></div>
+
+      </div>
+    </div>
+
+
+    <div class="footer-bar">
+
+       <button class="handle-btn add-to-cart">加入购物车</button>
+       <button class="handle-btn add-to-custom">定制</button>
+      
+    </div>
+    <hr class="featurette-divider">
+    <!-- FOOTER -->
+    <footer>
+      <p class="pull-right">
+        <a href="${path}/web/#">回到顶部</a>
+      </p>
+      <p>
+        &copy; 2014 Company, Inc. &middot;
+        <a href="${path}/web/#">一麻袋</a>
+        &middot;
+        <a href="${path}/web/#">版权所有</a>
+      </p>
+    </footer>
+
+  </div>
+  <!-- /.container -->
+
+  <script type="text/javascript">
+        $(document).ready(function(){
+       
+        });
+
+    </script></body>
+</html>

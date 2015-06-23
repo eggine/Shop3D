@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>首页</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="${path}/web/css/bootstrap.min.css" rel="stylesheet">
+  <link href="${path}/web/css/store.css" rel="stylesheet">
+  <link href="${path}/web/css/font-awesome.min.css" rel="stylesheet">
+  <link href="${path}/web/css/sendi_loading_wave.css" rel="stylesheet">
+
+  <script src="${path}/web/js/jquery.min.js"></script>
+  <script src="${path}/web/js/bootstrap.min.js"></script>
+  <script src="${path}/web/js/lyon-page-2.0.js"></script>
+  <script src="${path}/web/js/loadData.js"></script>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="${path}/web/https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="${path}/web/https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body style="overflow:scroll">
+<!-- Fixed navbar start-->
+<div id="navpanel">
+  <nav id="aaaaa" class="navbar navbar-default navbar-fixed-top blue-navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="${path}/">3D 商城</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse in">
+        <ul class="nav navbar-nav">
+          <li class="mainmenu">
+            <a  href="#" data-target="#test1">男子</a>
+          </li>
+          <li class="mainmenu">
+            <a data-toggle="collapse" href="#" data-target="#test2">女子</a>
+          </li>
+          <li class="mainmenu">
+            <a data-toggle="collapse" href="#" data-target="#test3">商务</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+              运动
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a href="#">Action</a>
+              </li>
+              <li>
+                <a href="${path}/web/${path}/web/#">Another action</a>
+              </li>
+              <li>
+                <a href="${path}/web/${path}/web/#">Something else here</a>
+              </li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li>
+                <a href="${path}/web/${path}/web/#">Separated link</a>
+              </li>
+              <li>
+                <a href="${path}/web/${path}/web/#">One more separated link</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="${path}/web/../navbar/">注册</a>
+          </li>
+          <li>
+            <a href="${path}/web/../navbar-static-top/">登陆</a>
+          </li>
+          <li class="active">
+            <a href="${path}/web/${path}/web/./">帮助</a>
+          </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse --> </div>
+  </nav>
+</div>
+<!-- Fixed bar end -->
+
+  <div class="container-fluid">
+    <div class="row" style="margin-top:71px">
+      <div class="col-lg-3">
+        
+              <div class="panel panel-default ymd-panel">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="${path}/web/#collapseOne" aria-expanded="true" aria-controls="collapseOne">性别</a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body ymd-panel-body">
+                    <div class="list-group ymd-list-group">
+                      <a href="${path}/web/#" class="list-group-item ymd-list-group-item">
+                        
+                        男
+                      </a>
+                      <a href="${path}/web/#" class="list-group-item ymd-list-group-item">
+                        
+                        女
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default ymd-panel">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="${path}/web/#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">类别</a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body ymd-panel-body">
+                    <div class="list-group ymd-list-group">
+                      <a href="#" class="list-group-item ymd-list-group-item">
+                     
+                        休闲
+                      </a>
+                      <a href="#" class="list-group-item ymd-list-group-item">
+                        
+                        运动
+                      </a>
+                      <a href="#" class="list-group-item ymd-list-group-item">
+                        
+                        商务
+                      </a>
+                      <a href="#" class="list-group-item ymd-list-group-item">
+                        
+                        户外
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default ymd-panel">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="${path}/web/#collapseThree" aria-expanded="false" aria-controls="collapseThree">材质</a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+                  <div class="panel-body ymd-panel-body">
+                    <div class="list-group ymd-list-group">
+                      <a href="#" class="list-group-item ymd-list-group-item">
+                        真皮
+                      </a>
+                      <a href="#" class="list-group-item ymd-list-group-item">
+                        
+                        涤纶
+                      </a>
+                      <a href="#" class="list-group-item ymd-list-group-item">
+                        
+                        人造皮革
+                      </a>
+                      <a href="#" class="list-group-item ymd-list-group-item">
+                        
+                        纯棉
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+
+      </div>
+      <!--End of col-lg-3-->
+
+
+      <!-- list panel start -->      
+      <div class="col-lg-9">
+        <div class="row">
+        
+         <div class="col-lg-12 list-nav">
+           <span class="list-nav-type">产品系列</span>
+           <form class="form-inline" style="float:right">
+                <select class="form-control ymd-select">
+                  <option value="none">排序</option>
+                  <option value="count">销量</option>
+                  <option value="price-high">价格（高至低）</option>
+                  <option value="price-low">价格（底至高）</option>
+                  <option value="newest">最新</option>
+                </select>
+           </form>
+         </div>
+
+         <!--  <div id="items" class="col-lg-12">
+            <div class="grid-item">
+              <div class="grid-item-box">
+                <div class="grid-item-content">
+                  <div class="grid-item-img">
+                    <a href="${path}/web/#">
+                      <img src="${path}/web/images/aa.png" />      
+                    </a>
+                  </div>
+
+                  <div class="grid-item-info">
+                    <div class="product-group-details">man</div>
+                    <div class="product-group-name">sportshoe</div>
+                    <div class="product-group-price">$72</div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-item">
+              <div class="grid-item-box">
+                <div class="grid-item-content">
+                  <div class="grid-item-img">
+                    <div class="grid-item-img-wrap">
+                      <a href="${path}/web/#">
+                        <img src="${path}/web/images/aa.png" />      
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="grid-item-info">
+                    <div class="product-group-details">man</div>
+                    <div class="product-group-name">sportshoe</div>
+                    <div class="product-group-price">$72</div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-item">
+              <div class="grid-item-box">
+                <div class="grid-item-content">
+                  <div class="grid-item-img">
+                    <a href="${path}/web/#">
+                      <img src="${path}/web/images/aa.png" />      
+                    </a>
+                  </div>
+
+                  <div class="grid-item-info">
+                    <div class="product-group-details">man</div>
+                    <div class="product-group-name">sportshoe</div>
+                    <div class="product-group-price">$72</div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-item">
+              <div class="grid-item-box">
+                <div class="grid-item-content">
+                  <div class="grid-item-img">
+                    <a href="${path}/web/#">
+                      <img src="${path}/web/images/aa.png" />      
+                    </a>
+                  </div>
+
+                  <div class="grid-item-info">
+                    <div class="product-group-details">man</div>
+                    <div class="product-group-name">sportshoe</div>
+                    <div class="product-group-price">$72</div>
+                  </div>
+
+                </div>
+              </div>
+            </div> -->
+			<#list items as item>
+            <div class="grid-item">
+              <div class="grid-item-box">
+                <div class="grid-item-content">
+                  <div class="grid-item-img">
+                    <a href="detail?itemId=${item.name}">
+                      <img src="${item.preview!'${path}/web/images/aa.png'}" />      
+                    </a>
+                  </div>
+
+                  <div class="grid-item-info">
+                    <div class="product-group-details">${item.brand!'你又忘记上传商品的时候介绍我'}</div>
+                    <div class="product-group-name">${item.name!'我没有名字'}</div>
+                    <div class="product-group-price">${item.price!'$100'}</div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            </#list>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 ">
+            <nav id="lyonpage" class="pull-right">
+              <ul class="pagination ">
+                <li class="disabled">
+                  <a href="${path}/web/#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="active">
+                  <a href="${path}/web/#" >1</a>
+                </li>
+                <li>
+                  <a href="${path}/web/#">2</a>
+                </li>
+                <li>
+                  <a href="${path}/web/#">3</a>
+                </li>
+                <li>
+                  <a href="${path}/web/#">4</a>
+                </li>
+                <li>
+                  <a href="${path}/web/#">5</a>
+                </li>
+                <li>
+                  <a href="${path}/web/#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    <!--list panel end--> 
+    </div>
+  <!-- /.row -->
+  
+  <hr class="featurette-divider">
+  <!-- FOOTER -->
+    <footer>
+      <p class="pull-right">
+        <a href="${path}/web/#">回到顶部</a>
+      </p>
+      <p>
+        &copy; 2014 Company, Inc. &middot;
+        <a href="${path}/web/#">一麻袋</a>
+        &middot;
+        <a href="${path}/web/#">版权所有</a>
+      </p>
+    </footer>
+
+</div>
+<!-- /.container -->
+<script type="text/javascript">
+
+
+$(document).ready(function() {
+  
+   $('.list-group-item').on('click',function(){
+
+        var selected = false;
+        var selectedSpan = $(this).find('span');
+        if(selectedSpan.length > 0){
+
+          selected = true;
+
+        }
+        var itemParent = $(this).parent();
+        
+        var children = itemParent.children();
+        for (var i = 0; i < children.length; i++) {
+
+            var rmSpan = $(children[i]).find('span');
+            if(rmSpan != null && rmSpan != undefined){
+               rmSpan.remove();
+            }
+
+        };
+
+        if(!selected){
+          $(this).append($('<span class="badge"><i class="fa fa-check"></i></span>'));
+        }
+            
+   });
+          
+
+
+});
+/*        $(document).ready(function(){
+           $('#lyonpage').Lyonpage({
+              pageSize:10,
+              totalRecord:297,
+              url:'test.json',
+              success:function(json){
+                    console.debug(json);
+                    $('#items').empty();
+                    var list = json.data.list;
+                    console.debug(list);
+                    $.each(list, function(index, item) {
+                       
+                                 var gridItem = $('<div></div').addClass('grid-item');
+                                 var gridItemBox = $('<div></div').addClass('grid-item-box').appendTo(gridItem);
+                                 var gridItemContent = $('<div></div').addClass('grid-item-content').appendTo(gridItemBox);
+                                 var gridItemImg = $('<div></div').addClass('grid-item-img').appendTo(gridItemContent);
+                                 var a = $('<a></a>').attr('href','#').append($('<img>').attr('src',list[index].thumbnail).css({'width':'100%','height':'100%'}));
+                                 a.appendTo(gridItemImg);
+                                 gridItem.appendTo($('#items'));
+
+                    });
+
+               },
+              err:function(e){}
+           });
+        })*/;
+    </script></body>
+</html>

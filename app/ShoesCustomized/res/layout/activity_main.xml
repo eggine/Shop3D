@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (c) 2013 The Chromium Authors. All rights reserved.
+
+     Use of this source code is governed by a BSD-style license that can be
+     found in the LICENSE file.
+ -->
+
+<LinearLayout android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+	    <org.xwalk.core.XWalkView android:id="@+id/home_web"
+		  xmlns:android="http://schemas.android.com/apk/res/android"
+		  android:layout_weight="1.0"
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content">
+		</org.xwalk.core.XWalkView>
+	    
+	    <org.xwalk.core.XWalkView android:id="@+id/detail_web"
+		  xmlns:android="http://schemas.android.com/apk/res/android"
+		  android:layout_weight="1.0"
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:visibility="gone">
+		</org.xwalk.core.XWalkView>
+	    
+	    <org.xwalk.core.XWalkView android:id="@+id/personal_web"
+		  xmlns:android="http://schemas.android.com/apk/res/android"
+		  android:layout_weight="1.0"
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:visibility="gone">
+		</org.xwalk.core.XWalkView>
+
+        <RadioGroup
+            android:id="@+id/home_radio_button_group"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="0.0"
+            android:layout_gravity="bottom"
+            android:background="@drawable/main_navigation_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/home_tab_main"
+                style="@style/home_tab_bottom"
+                android:background="@drawable/home_tab_background_selector"
+                android:checked="true"
+                android:drawableTop="@drawable/home_tab_main_selector" />
+
+<!--             <RadioButton
+                android:id="@+id/home_tab_search"
+                style="@style/home_tab_bottom"
+                android:background="@drawable/home_tab_background_selector"
+                android:drawableTop="@drawable/home_tab_search_selector" /> -->
+
+            <RadioButton
+                android:id="@+id/home_tab_category"
+                style="@style/home_tab_bottom"
+                android:background="@drawable/home_tab_background_selector"
+                android:drawableTop="@drawable/home_tab_category_selector" />
+
+<!--             <RadioButton
+                android:id="@+id/home_tab_cart"
+                style="@style/home_tab_bottom"
+                android:background="@drawable/home_tab_background_selector"
+                android:drawableTop="@drawable/home_tab_cart_selector" /> -->
+
+            <RadioButton
+                android:id="@+id/home_tab_personal"
+                style="@style/home_tab_bottom"
+                android:background="@drawable/home_tab_background_selector"
+                android:drawableTop="@drawable/home_tab_personal_selector" />
+        </RadioGroup>
+</LinearLayout>
+

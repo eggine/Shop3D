@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>定制</title>
+   <!--
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/carousel.css" rel="stylesheet">
+  <link href="css/store.css" rel="stylesheet">
+  <link href="css/mobile-store.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/sendi_loading_wave.css" rel="stylesheet">-->
+  
+
+  <!-- -----------------------produce mode------------------------ -->
+  <link href="${path}/web/css/m_bootstrap.min.css" rel="stylesheet">
+  <link href="${path}/web/css/m_carousel.css" rel="stylesheet">
+  <link href="${path}/web/css/m_store.css" rel="stylesheet">
+  <link href="${path}/web/css/m_mobile-store.css" rel="stylesheet">
+  <link href="${path}/web/css/m_font-awesome.min.css" rel="stylesheet">
+  <link href="${path}/web/css/m_sendi_loading_wave.css" rel="stylesheet">
+  
+  <script type="text/javascript">
+  var urlParams = (function(url)
+      {
+        var result = new Object();
+        var idx = url.lastIndexOf('?');
+    
+        if (idx > 0)
+        {
+          var params = url.substring(idx + 1).split('&');
+          
+          for (var i = 0; i < params.length; i++)
+          {
+            idx = params[i].indexOf('=');
+            
+            if (idx > 0)
+            {
+              result[params[i].substring(0, idx)] = params[i].substring(idx + 1);
+            }
+          }
+        }
+        
+        return result;
+
+      })(window.location.href);
+
+      var itemId = urlParams['itemId'];
+  </script>
+
+    <!--           
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/CustomUtils.js"></script>
+  <script src="js/ImgLoadAlgorithm.js"></script>
+  <script src="js/renderPanel.js"></script>
+  <script type="text/javascript"  src="js/imageloader.js"></script>
+   <script type="text/javascript"  src="js/slide-nav.js"></script>
+
+   <script type="text/javascript"  src="js/sendi-jquery-loading-1.0.js"></script>-->
+   <!-- -------------------------------produce mode--------------------------------------------- -->
+  <script src="${path}/web/js/m_jquery.min.js"></script>
+  <script src="${path}/web/js/m_sendi-jquery-loading-1.0.js"></script>
+  <script src="${path}/web/js/m_bootstrap.min.js"></script>
+  <script type="text/javascript" src="${path}/web/js/m_CustomUtils.js"></script>
+  <script src="${path}/web/js/m_ImgLoadAlgorithm.js"></script>
+  <script src="${path}/web/js/m_renderPanel.js"></script>
+  <script type="text/javascript"  src="${path}/web/js/m_imageloader.js"></script>
+  <script type="text/javascript"  src="${path}/web/js/m_slide-nav.js"></script>
+  
+  
+</head>
+
+<body style="overflow:auto">
+   
+  <!-- Fixed navbar -->
+  <div id="navpanel">
+  <input type ="hidden" id="itemname" value="${itemname!' '}">
+    <nav id="aaaaa" class="navbar navbar-default navbar-fixed-top blue-navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+          <a class="navbar-brand" href="#">3D</a>
+          <span class="page-title">商品定制</span>
+      
+        </div>
+         <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="mainmenu">
+
+              <a data-toggle="collapse" href="m_produceList.html" data-target="#test1">男子</a>
+
+            </li>
+            <li class="mainmenu">
+
+              <a data-toggle="collapse" href="m_produceList.html" data-target="#test2">女子</a>
+
+            </li>
+            <li class="mainmenu">
+
+
+              <a data-toggle="collapse" href="m_produceList.html" data-target="#test3">商务</a>
+
+            </li>
+            <li class="mainmenu">
+              <a href="${path}/web/#" class="" data-toggle="" role="button" aria-expanded="false">
+                运动
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="${path}/web/#">Action</a>
+                </li>
+                <li>
+                  <a href="${path}/web/#">Another action</a>
+                </li>
+                <li>
+                  <a href="${path}/web/#">Something else here</a>
+                </li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li>
+                  <a href="${path}/web/#">Separated link</a>
+                </li>
+                <li>
+                  <a href="${path}/web/#">One more separated link</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+
+
+              <a href="../navbar/">注册</a>
+
+            </li>
+            <li>
+
+
+              <a href="../navbar-static-top/">登陆</a>
+
+            </li>
+            <li class="active">
+              <a href="${path}/web/./">
+                帮助
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--/.nav-collapse --> </div>
+    </nav>
+
+  </div>
+
+  <div class="container" style="margin-top:51px">
+    <div class="row">
+      <div class="col-xs-12 info-produce">
+        <div id="produceName"class="info-produce-name"></div>
+        <div id="producePrice" class="info-produce-price"></div>
+
+      </div>
+      <div class="col-xs-12 imgcontainer-fixed" style="overflow:hidden;">
+            
+          <div id="imgcontainer" class="img-container">
+            <!-- <img id="img1" src="images/images/00.jpg"/> -->
+
+          </div>
+
+          <div class="left-button direction-btn" data-direction="left">
+             
+             <span> <i class="fa fa-angle-left  "></i>
+                  </span>
+
+          </div>
+           <div class="right-button direction-btn" data-direction="right">
+            
+              <span> <i class="fa fa-angle-right  "></i>
+                  </span>
+          </div>
+           <div class="up-button direction-btn" data-direction="up">
+              <span> <i class="fa fa-angle-up  "></i>
+                  </span>
+            
+          </div>
+           <div class="down-button direction-btn" data-direction="down">
+            
+              <span> <i class="fa fa-angle-down "></i>
+                  </span>
+          </div>
+            <!-- <div class="direction-bar">
+            <ul>
+              <li>
+                <div data-direction="up" class="direction-btn">
+                  <img src="images/up.png"></div>
+              </li>
+              <li>
+                <div data-direction="down" class="direction-btn">
+                  <img src="images/down.png"></div>
+              </li>
+              <li>
+                <div data-direction="left" class="direction-btn">
+                  <img src="images/left.png"></div>
+              </li>
+              <li>
+                <div data-direction="right" class="direction-btn">
+                  <img src="images/right.png"></div>
+              </li>
+            </ul>
+          </div>  -->
+
+      <!--  <div class="direction-bar">
+            <ul>
+                <li>
+                  <div data-direction="up" class="direction-btn">
+                    <img src="${path}/web/images/up.png"></div>
+                </li>
+                <li>
+                  <div data-direction="down" class="direction-btn">
+                    <img src="${path}/web/images/down.png"></div>
+                </li>
+                <li>
+                  <div data-direction="left" class="direction-btn">
+                    <img src="${path}/web/images/left.png"></div>
+                </li>
+                <li>
+                  <div data-direction="right" class="direction-btn">
+                    <img src="${path}/web/images/right.png"></div>
+                </li>
+            </ul>
+        </div> -->
+		
+<!-- 		 <div class="direction-bar">
+            <ul>
+              <li>
+                <div data-direction="up" class="direction-btn">
+                <span> <i class="fa fa-angle-up  "></i>
+                </span>
+                </div>
+              </li>
+              <li>
+                <div data-direction="down" class="direction-btn">
+                  <span> <i class="fa fa-angle-down  "></i>
+                  </span>
+                  </div>
+              </li>
+              <li>
+                <div data-direction="left" class="direction-btn">
+                  <span> <i class="fa fa-angle-left  "></i>
+                  </span>
+                  </div>
+              </li>
+              <li>
+                <div data-direction="right" class="direction-btn">
+                    <span><i class="fa fa-angle-right  "></i></span>
+                  
+                </div>
+              </li>
+              <li>
+                <div id="enlarge-pic" data-direction="enlarge" class="direction-btn" style="font-size:23px;">
+                    <span><i class="fa fa-search-plus  "></i></span>
+                </div>
+              </li>
+              <li class="clearfix"></li>
+            </ul>
+          </div>  -->
+		
+       <!--  <div class="slide-panel" style="left:-83px">
+           <div class="slide-panel-nav">
+              <span id="slide-expand" >展开<i class="fa fa-angle-right fa-2x"></i></span>
+              <span id="slide-collapsed" style="display:none">收起<i class="fa fa-angle-left fa-2x"></i></span>
+           </div>
+           <div class="prev" id="prev-pic"><i class="fa fa-angle-up fa-2x"></i></div>
+           <div class="next" id="next-pic"><i class="fa fa-angle-down fa-2x"></i></div>
+           <div class="slide-pic-list">
+              <ul id="pic-list-ul">
+               <li><a href="#"><img src="${path}/web/images/images/20.jpg"></a></li>
+               <li><a href="#"><img src="${path}/web/images/images/21.jpg"></a></li>
+               <li><a href="#"><img src="${path}/web/images/images/22.jpg"></a></li>
+               <li><a href="#"><img src="${path}/web/images/images/23.jpg"></a></li>
+               <li><a href="#"><img src="${path}/web/images/images/24.jpg"></a></li>
+               <li><a href="#"><img src="${path}/web/images/images/25.jpg"></a></li>
+               <li><a href="#"><img src="${path}/web/images/images/26.jpg"></a></li>
+
+              </ul>
+           </div>
+
+        </div> -->
+
+      </div>
+
+
+      <div class="col-xs-12 pd0 custom-edit-panel">
+     <!--    <div class="produce-title">
+          <h4 id="produceName" >Channel平底鞋</h4>
+          <span id="producePrice">$3000</span>
+        </div> -->
+        <div class="col-xs-12 pd0 custom-label">开始定制</div>
+        <div class="choose-panel-content">
+          <select id="componentNames" class="form-control newselect">
+           
+          </select>
+
+          <div id="materialContent" class="choose-panel-material-content">
+            
+
+          </div>
+        
+        </div>
+
+
+
+        <div class="choose-panel-footer">
+          <div class="btn-group btn-group-justified mt10" role="group" aria-label="">
+            <div class="btn-group" role="group">
+              <button id="add-to-cart"type="button" class="btn btn-lg btn-default bluebutton">加入购物车</button>
+            </div>
+
+          </div>
+
+          <a class="choose-panel-wishlist mt10" href="">保存到心愿单</a>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- /.row -->
+    
+
+   <!--  <hr class="featurette-divider"> -->
+    <!-- FOOTER -->
+   <!-- <footer>
+      <p class="pull-right">
+
+        <a href="${path}/web/#">Back to top</a>
+
+        <a href="#">回到顶部</a>
+
+      </p>
+      <p>
+        &copy; 2014 Company, Inc. &middot;
+
+        <a href="${path}/web/#">Privacy</a>
+
+        <a href="#">一麻袋</a>
+        &middot;
+
+        <a href="${path}/web/#">Terms</a>
+
+        <a href="#">版权所有</a>
+
+      </p>
+    </footer> -->
+  </div>
+  <!-- /.container -->
+
+  
+  
+  
+
+  <script type="text/javascript">
+        
+        // 调整定制图片大小
+        (function(window,document,$){
+
+            var rate = 1.82;
+            var w = window.innerWidth;
+            var h = w/1.82;
+            var mt = h + 71;
+            $("#imgcontainer").css('height',h + 'px');
+            $('.custom-edit-panel').css('top',mt + 'px');
+            $('.right-button').css('lineHeight',h + 'px');
+            $('.left-button').css('lineHeight',h + 'px');
+
+         })(window,document,jQuery);
+
+        $(document).ready(function(){
+         
+            $('[data-toggle="tooltip"]').tooltip();
+
+           
+           // Custom.init();
+            renderPanel();
+			    //  slidePanel();
+			 /*
+			     $('#enlarge-pic').on('click',function(){
+
+              console.debug(screen.availWidth);
+
+
+               
+               window.open("${path}/web/fullview.html",'view','width='+screen.availWidth+',height='+screen.availHeight); 
+
+            });*/
+            /*$.ajax({
+               
+               url:'custom.json',
+               type:'GET',
+               success:function(json){
+
+                    console.debug(json);
+               },
+               error:function(e){
+                  
+                  console.error(e);
+
+
+               }
+
+
+
+            });*/
+           
+
+
+        });
+
+
+
+    </script>
+</body>
+</html>

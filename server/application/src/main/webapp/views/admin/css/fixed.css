@@ -1,0 +1,19 @@
+.panel-collapse .list-group {
+ 
+
+
+    margin-bottom: 0px;
+
+
+
+}
+.panel-collapse .list-group .list-group-item{
+
+	border-left: 0px;
+	border-right: 0px;
+}
+.panel-collapse .list-group .list-group-item:first-child{
+
+
+	border-radius: 0px;
+}

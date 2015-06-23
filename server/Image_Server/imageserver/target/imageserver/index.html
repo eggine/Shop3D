@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 	<div class="file-box">
+		<form action="file/upload" method="post" enctype="multipart/form-data">
+			itemID<input type='text' name="itemID" id='itemID' class='txt' /><br>
+			文件<input type="file" name="file" class="file" id="fileField" size="28"
+				onchange="document.getElementById('filename').value=this.value" />
+			<input type="submit" name="submit" class="btn" value="上传" />
+		</form>
+	</div> -->
+	  <p style="color:red">---------------------------------------------------</p>
+	 <div class="bootstrap-admin-panel-content bootstrap-admin-no-table-panel-content collapse in">
+                        <form action="upload/thumbnailupload" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                              	<input type="text" id="itemID" name="itemID" value="A6DH899" />
+                              	<input type="hidden" id="filetype" name="filetype" value="2"/> 
+                                <label for="exampleInputFile">上传材质缩略图</label>
+                                <input type="file" id="file"  name="file" />
+                                <p style="color:red">上传多张材质缩略图，格式为jpg，png。等等</p>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-default">提交</button>
+                        </form>
+                    </div>
+      <p style="color:red">---------------------------------------------------</p>
+</body>
+</html>

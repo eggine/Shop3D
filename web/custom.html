@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>客户定制</title>
+    <style type="text/css">
+          body { -ms-touch-action: none; }
+    </style>
+    <script type="text/javascript" src="js/KeyShotVR.js"></script>
+     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+      var keyshotVR;
+
+      function initKeyShotVR() {
+        var nameOfDiv = "KeyShotVR";
+        var folderName = "images/img";
+        var imageWidth = 961;
+        var imageHeight = 480;
+        var backgroundColor = "#FFFFFF";
+        var uCount = 8;
+        var vCount = 4;
+        var uWrap = true;
+        var vWrap = false;
+        var uMouseSensitivity = -0.022222;
+        var vMouseSensitivity = 0.044444;
+        var uStartIndex = 4;
+        var vStartIndex = 3;
+        var minZoom = 1.000000;
+        var maxZoom = 2.000000;
+        var rotationDamping = 0.960000;
+        var downScaleToBrowser = false;
+        var addDownScaleGUIButton = false;
+        var addPlayGUIButton = false;
+        var imageExtension = "jpg";
+        var showLoading = true;
+        var loadingIcon = ""; // Set to empty string for default icon.
+        var allowFullscreen = true; // Double-click in desktop browsers for fullscreen.
+
+        keyshotVR = new keyshotVR(nameOfDiv,folderName,imageWidth,imageHeight,backgroundColor,uCount,vCount,uWrap,vWrap,uMouseSensitivity,vMouseSensitivity,uStartIndex,vStartIndex,minZoom,maxZoom,rotationDamping,downScaleToBrowser,addDownScaleGUIButton,addPlayGUIButton,imageExtension,showLoading,loadingIcon,allowFullscreen);
+
+       
+      }
+
+      window.onload = initKeyShotVR;
+    </script>
+  </head>
+  <body>
+    <div id="KeyShotVR"></div> 
+
+    <script type="text/javascript">
+     
+
+
+     var currentSrc = "";
+     var currentX
+
+
+     var isdown = false;
+
+     $(document).ready(function($) {
+
+     	 $("#KeyShotVR").mouseup(function(event) {
+        	console.log("test up");
+        	console.log($("#backbuffer").attr("src"));
+        	isdown = false;
+        });
+		$("#KeyShotVR").mousedown(function(event) {
+			isdown = true;
+        	console.log("test down");
+        	console.log(event.clientX);
+        	currentX = event.clientX;
+        	currentSrc = $("#backbuffer").attr("src");
+        });
+
+        $("#KeyShotVR").click(function(event) {
+        	/* Act on the event */
+        	console.log("test");
+        });
+
+        $("#KeyShotVR").mousemove(function(event) {
+        	/* Act on the event */
+
+
+        	if(isdown){
+        	console.log("test move");
+        	var nowSrc = $("#backbuffer").attr("src");
+        	if(nowSrc != currentSrc){
+               
+               console.log($("#backbuffer").attr("src"));
+
+               currentSrc =  $("#backbuffer").attr("src");
+        	   console.log(event.clientX);
+
+        	   console.log(currentX - event.clientX);
+
+        	   currentX = event.clientX;
+
+        	}
+
+        	}
+        	
+        });
+
+
+
+     	
+     });
+
+       
+
+
+    </script>
+  </body>
+</html>

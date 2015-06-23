@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3D商城</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="${path}/views/admin/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="${path}/views/admin/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link href="${path}/views/admin/css/fixed.css" rel="stylesheet" media="screen">
+
+    <!-- Bootstrap Admin Theme -->
+    <link href="${path}/views/admin/css/bootstrap-admin-theme.css" rel="stylesheet" media="screen">
+     <link href="${path}/views/admin/css/DT_bootstrap.css" rel="stylesheet" media="screen">
+
+    <!-- Vendors -->
+    <link href="vendors/easypiechart/jquery.easy-pie-chart.css" rel="stylesheet" media="screen">
+    <link href="vendors/easypiechart/jquery.easy-pie-chart_custom.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="bootstrap-admin-with-small-navbar">
+    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top " role="navigation">
+        <div class="container">
+            <div class="row">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">3D商城| 后台</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#">首页</a>
+                        </li>
+                        <li >
+                            <a href="#">关于我们</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                更多功能 <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a href="#">Another action</a>
+                                </li>
+                                <li>
+                                    <a href="#">Something else here</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#">Separated link</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#">One more separated link</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="请输入内容"></div>
+                        <button type="submit" class="btn btn-default">搜索</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">链接</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                管理员 <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">设置</a>
+                                </li>
+                                <li>
+                                    <a href="#">个人资料</a>
+                                </li>
+                                <li>
+                                    <a href="#">账户中心</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#">退出登录</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse --> </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- left, vertical navbar & content -->
+        <div class="row">
+            <!-- left, vertical navbar -->
+            <div class="col-md-2 bootstrap-admin-col-left">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">菜单一</a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+
+                            <div class="list-group">
+                                <a  href="main" class="list-group-item ">商品信息</a>
+                                <a  href="table" class="list-group-item ">用户信息表</a>
+                                <a  href="cache" class="list-group-item ">方案信息</a>
+                                <a  href="upload" class="list-group-item ">文件上传</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">菜单二</a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body"></div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">菜单三</a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+
+           <!--  end of header -->
+            <!-- content -->
+            <div class="col-md-10">
+                <!--      <div class="row">
+                <div class="alert alert-success bootstrap-admin-alert">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    <h4>成功</h4>
+                    这里是操作成功提示信息！
+                </div>
+            </div>
+            -->
+            <div class="row">
+                <div class="navbar navbar-default bootstrap-admin-navbar-thin">
+                    <ol class="breadcrumb bootstrap-admin-breadcrumb">
+                        <li>
+                            <a href="#">方案信息</a>
+                        </li>
+                     
+                    </ol>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="panel panel-default bootstrap-admin-no-table-panel">
+                    <div class="panel-heading">
+                        <div class="text-muted bootstrap-admin-box-title">方案信息</div>
+                     
+                    </div>
+                    <div class="bootstrap-admin-panel-content bootstrap-admin-no-table-panel-content collapse in">
+                        <div class="row">
+                        <div class="col-lg-12">
+                            <form action="index.action" method="post" class="form-inline">
+                                <div class="form-group">
+                                    <label for="exampleInputName2">关键字1：</label>
+                                    <input type="text" class="form-control" id="keyword1" style="width:200px" ></div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail2">关键字2：</label>
+                                    <input type="text" class="form-control" id="keyword2" style="width:300px" ></div>
+                                <button type="submit" class="btn btn-default">提交</button>
+                            </form>
+                            </div> 
+                        </div>
+
+                        <table class="table table-striped table-bordered" id="example">
+                            <thead>
+                                <tr>
+                                    <th>方案ID</th>
+                                    <th>商品ID</th>
+                                    <th>定制方案</th>
+                                    <th>图片视角</th>
+                                    <th>定制日期</th>
+                                </tr>
+                            </thead>
+                           
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <hr>
+        <footer role="contentinfo">
+            <p>
+                &copy; 2015
+                <a href="#" target="_blank">一麻袋</a>
+            </p>
+        </footer>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="${path}/views/admin/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="${path}/views/admin/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="${path}/views/admin/js/DT_bootstrap.js"></script>
+
+
+<script type="text/javascript">
+            $(function() {
+                $('#example').DataTable({
+                       
+                       "searching":false,
+                       "lengthChange":false,
+                       "info":false,
+                       "ajax":{
+                           'url':'http://120.25.204.98:8080/aserver/Custom/query',
+                           'type':'post',
+                           'dataSrc':function(json){
+                               console.debug(json.data);
+                               var newList = [];
+                               var list = json.data.list;
+                               var item = {};
+                               for (var i = 0; i < list.length; i++) {
+                                    item.custom = list[i].custom;
+                                    item.date = list[i].date;
+                                    item.id = list[i].id;
+                                    item.imageNumber = list[i].imageNumber;
+                                    item.itemId = list[i].itemId;
+                                    newList.push(item);
+                               };
+
+
+
+
+                               return newList;
+ 
+                            },
+
+
+                       },
+                       "columns": [
+                            { "data": "id" },
+                            { "data": "itemId" },
+                            { "data": "custom" },
+                            { "data": "imageNumber" },
+                            { "data": "date" },
+                           
+                          
+                        ],
+                        "language": {
+                                       "oPaginate": {
+                                                     "sNext": "下一页",
+                                                     "sPrevious": "上一页",
+                                                    },
+                                    }
+                   
+                });
+
+            });
+        </script>
+</body>
+</html>

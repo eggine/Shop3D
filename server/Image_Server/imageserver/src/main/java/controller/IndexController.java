@@ -1,0 +1,11 @@
+/*   */ package controller;
+/*   */ 
+/*   */ import com.jfinal.core.Controller;
+/*   */ 
+/*   */ public class IndexController extends Controller
+/*   */ {
+/*   */   public void index()
+/*   */   {
+/* 7 */     render("index.html");
+/*   */   }
+/*   */ }

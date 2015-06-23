@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>首页</title>
+  
+  <!-- dev mode -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/carousel.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/store.css" rel="stylesheet">
+  <link href="css/mobile-store.css" rel="stylesheet">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ymd-carousel.js"></script>
+  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+  <!-- produce mode 
+  <link href="${path}/web/css/bootstrap.min.css" rel="stylesheet">
+  <link href="${path}/web/css/font-awesome.min.css" rel="stylesheet">
+  <link href="${path}/web/css/carousel.css" rel="stylesheet">
+  <link href="${path}/web/css/store.css" rel="stylesheet">
+  <link href="${path}/web/css/mobile-store.css" rel="stylesheet">
+  <script src="${path}/web/js/jquery.min.js"></script>
+  <script src="${path}/web/js/bootstrap.min.js"></script>
+  <script src="${path}/web/../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  -->
+
+</head>
+
+<body>
+
+
+  <script type="text/javascript">
+  
+  //location.href = 'http://www.baidu.com';
+  
+  var u = navigator.userAgent;
+  console.debug(u);
+  if(u.indexOf('Mobile') > -1)
+	  location.href = 'http://localhost:8080/aserver/mobile/m_index.html';
+  else
+	  location.href = 'http://localhost:8080/aserver/main';
+  
+	  
+  
+  
+     
+    
+     
+       
+    </script>
+  </body>
+</html>

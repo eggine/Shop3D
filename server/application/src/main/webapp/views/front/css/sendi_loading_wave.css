@@ -1,0 +1,75 @@
+.loadingmodal{
+    display:block;
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    background-color:#FFFFFF;
+    opacity: 0.0;
+    z-index:1000;
+  }
+.spinner {
+      left:45%;
+      top:45%;
+      position: absolute;
+      width: 50px;
+      height: 30px;
+      text-align: center;
+      font-size: 1em;
+      z-index: 20000;
+    }
+
+.spinner > div {
+      background-color: #FFFFFF;
+      height: 100%;
+      width: 6px;
+      display: inline-block;
+      z-index: :20001;
+      
+      -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+      -moz-animation: stretchdelay 1.2s infinite ease-in-out;
+      animation: stretchdelay 1.2s infinite ease-in-out;
+    }
+
+.spinner .rect2 {
+      -webkit-animation-delay: -1.1s;
+      -moz-animation-delay: -1.1s;
+      animation-delay: -1.1s;
+    }
+
+.spinner .rect3 {
+      -webkit-animation-delay: -1.0s;
+       -moz-animation-delay: -1.0s;
+      animation-delay: -1.0s;
+    }
+
+.spinner .rect4 {
+      -webkit-animation-delay: -0.9s;
+       -moz-animation-delay: -0.9s;
+      animation-delay: -0.9s;
+    }
+
+.spinner .rect5 {
+      -webkit-animation-delay: -0.8s;
+      -moz-animation-delay: -0.8s;
+      animation-delay: -0.8s;
+    }
+
+    @-webkit-keyframes stretchdelay {
+      0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+      20% { -webkit-transform: scaleY(1.0);
+            -moz-transform: scaleY(1.0);
+       }
+    }
+
+    @keyframes stretchdelay {
+      0%, 40%, 100% { 
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+      } 20% {
+        transform: scaleY(1.0);
+        -webkit-transform: scaleY(1.0);
+        -moz-transform: scaleY(1.0);
+      }
+    }
